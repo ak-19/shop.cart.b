@@ -1,0 +1,25 @@
+{
+  "name": "shop.cart.b",
+  "version": "0.0.1",
+  "description": "shop cart use case B",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build-client": "npm run --prefix client build && rm -rf ./public && mv ./client/build/ public/"
+  },
+  "keywords": [
+    "shop cart"
+  ],
+  "author": "ante",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.13"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
