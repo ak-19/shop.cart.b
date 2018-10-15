@@ -22,10 +22,10 @@ describe('Application simple rendering test', () => {
     expect(switchComponent).toHaveLength(1);
   });
 
-  test('Should render 1 Provider component', () => {
-    const providerComponent = application.find('Provider');
-    expect(providerComponent).toBeTruthy();
-    expect(providerComponent).toHaveLength(1);
+  test('Should render 1 StoreWrapper component', () => {
+    const storeWrapper = application.find('StoreWrapper');
+    expect(storeWrapper).toBeTruthy();
+    expect(storeWrapper).toHaveLength(1);
   });
 
   test('Should render 3 route components', () => {
