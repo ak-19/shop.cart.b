@@ -31,7 +31,6 @@ export const addNewProduct = (product) => {
 }
 
 export const deleteProduct = (id) => {
-  console.log(id);
   return dispatch => {
     axios
         .delete(`/api/product/${id}`)
