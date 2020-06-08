@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 const productRouter = require("./routes/product");
 const cartRouter = require("./routes/cart");
 
-app.use("/api/product", productRouter);
-app.use("/api/cart", cartRouter);
+app.use("/api/products", productRouter);
+app.use("/api/carts", cartRouter);
 
 const serverPort = process.env.PORT || 3001;
 
